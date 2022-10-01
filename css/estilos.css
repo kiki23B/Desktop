@@ -7,9 +7,9 @@
 }
 /* estilos de body */
 
-body{
-    background-color: #F5F5F5;
-    font-family: 'Poppins', sans-serif;
+.cuerpo{
+    background-color: #FDFDFD;
+    font-family: 'Inter', sans-serif;
     color: #4D4F51;
 }
 
@@ -17,12 +17,17 @@ body{
 
 .navegacion{
     background-color: #F5F5F5;
+    box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.25);
     position: fixed;
     width: 100vw;
+    height: 4rem;
     left: 0;
     top: 0;
     z-index: 999;
-    
+
+}
+.navegacion h3{
+    font-size: 1.5rem;
 }
 
 
@@ -34,20 +39,23 @@ main{
     align-items: center;
     background-color: #F8E882;
     border-radius: .8rem;
+    margin: 6.5rem 1.4rem 1.4rem 1.4rem;
+    padding:5rem;
+    
 }
 main div h1 span{
     display: block;
-    margin-top: 5rem;
 }
 
-h1{
-    font-size: 2rem;
+main h1{
+    display: block;
+    font-size: 5rem;
     color:#4D4F51;
     font-weight:bold;
 }
 
-main h4{
-    font-size: 1rem;
+main h3{
+    display: block;
     color: #4D4F51;
     font-weight: lighter;
     margin-bottom: 1rem;
@@ -59,10 +67,10 @@ main h4{
 }
 
 
-main div .boton-uno{
-    display: block;
-    border-radius: 1rem;
-    padding: 0.6rem;
+.boton-uno{
+    border-radius: 2rem;
+    padding: 0.5rem 3rem 3rem 0.5rem;
+    text-align: center;
     background-color:hsla(0,0%,100%,1);
     background-image:
     radial-gradient(at 45% 16%, hsla(14,100%,88%,1) 0px, transparent 50%),
@@ -70,6 +78,10 @@ main div .boton-uno{
     radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
     radial-gradient(at 98% 58%, hsla(334,64%,87%,1) 0px, transparent 50%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);  
+}
+main div a{
+    padding: 1rem 3rem 3rem 1rem;
+    text-align: center;
 }
 
 main .boton-uno:hover{
@@ -83,12 +95,16 @@ text-decoration: none;
 }
 
 
-/* proyectos */
+/* estilo de proyectos */
 
 section{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1.6rem;
+    margin-top: 1rem;
+    margin-right: 1.4rem
+    
 }
 
 section div h3{
@@ -145,18 +161,23 @@ body footer p{
 }
 
 /* media queris */
+/* estilos nuevos del main*/
 
-@media (min-width: 600px){
+@media screen and (min-width: 600px){
     /* estilos nuevos del main*/
+
+    body{
+        background-color: #FF7262;
+    }
 
     main{
         display: grid;
         grid-template-columns: repeat(2,2fr);
         grid-template-rows: 4fr 0.5fr 3fr ;
         grid-template-areas: 
-        "h1 imagen"
-        "h4 imagen"
-        "boton-uno imagen";
+        "h1 imagen-hero"
+        "h4 imagen-hero"
+        "boton-uno imagen-hero";
         justify-content: center;
         justify-items: center;
 
@@ -164,8 +185,8 @@ body footer p{
     main h1{
         grid-area: h1;
     }
-    main .imagen{
-        grid-area: imagen;
+    main .imagen-hero{
+        grid-area: imagen-hero;
     }
     main h4{
         grid-area: h4;
