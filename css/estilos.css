@@ -15,7 +15,7 @@
 
 /* header */
 
-.navegacion{
+.navbar{
     background-color: #F5F5F5;
     box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.25);
     position: fixed;
@@ -27,7 +27,11 @@
 
 }
 .navegacion h3{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+}
+
+#navbarNavAltMarkup{
+    background-color: #F5F5F5;
 }
 
 
@@ -45,31 +49,32 @@ main{
 }
 main div h1 span{
     display: block;
+    
 }
 
 main h1{
-    display: block;
-    font-size: 5rem;
+    font-size: 2rem;
+    text-align: center;
     color:#4D4F51;
     font-weight:bold;
 }
 
 main h3{
-    display: block;
+    align-items: center;
     color: #4D4F51;
-    font-weight: lighter;
+    font-weight: light;
+    font-size: 1.1rem;
+    text-align: center;
     margin-bottom: 1rem;
-}
-
-.imagen{
-    margin-top: 2rem;
-    
 }
 
 
 .boton-uno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 2rem;
-    padding: 0.5rem 3rem 3rem 0.5rem;
+    padding: 0.3rem 1.25rem 1.25rem 0.3rem;
     text-align: center;
     background-color:hsla(0,0%,100%,1);
     background-image:
@@ -80,7 +85,7 @@ main h3{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);  
 }
 main div a{
-    padding: 1rem 3rem 3rem 1rem;
+    align-items: center;
     text-align: center;
 }
 
@@ -94,16 +99,23 @@ color: #4D4F51;
 text-decoration: none;
 }
 
+.imagen-hero{
+    display: none;
+    
+}
+.imagen-hero-mobil{
+    width: 16rem ;
+    height: auto;
+
+}
 
 /* estilo de proyectos */
 
 section{
+    display: block;
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    gap: 1.6rem;
-    margin-top: 1rem;
-    margin-right: 1.4rem
+    flex-direction: column;
+    align-items: center;
     
 }
 
@@ -176,7 +188,7 @@ body footer p{
         grid-template-rows: 4fr 0.5fr 3fr ;
         grid-template-areas: 
         "h1 imagen-hero"
-        "h4 imagen-hero"
+        "h3 imagen-hero"
         "boton-uno imagen-hero";
         justify-content: center;
         justify-items: center;
@@ -184,26 +196,38 @@ body footer p{
     }
     main h1{
         grid-area: h1;
+        margin-bottom: 2rem;
     }
     main .imagen-hero{
         grid-area: imagen-hero;
+
     }
-    main h4{
-        grid-area: h4;
+    main h3{
+        grid-area: h3;
+        justify-self: start;
     }
     main .boton-uno{
         grid-area: boton-uno;
+        justify-self: start;
+        margin-top: 2rem;
     }
 
 /*section*/
     section{
-        display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1.6rem;
+    margin-top: 1rem;
+    margin-right: 1.4rem
+    
+}
     }
     section div{
         width: 10%;
     }
 
-}
+
 
 
 
