@@ -4,112 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contáctame</title>
+    <title>Portafolio</title>
+    <!-- Estilos propios -->
     <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Font linkeada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../indexx.html">Home</a>
-                </li> 
-             
-                <li>
-                   <a href="contactame.html">Contáctame</a>
-                </li>
-                <li>
-                    <a href="web.html">Web</a>
-                </li>
-                <li>
-                    <a href="otros.html">Otros</a>
-                </li>
-                <li>
-                    <a href="uxui.html">UX-UI</a>
-                </li>
-            </ul>
-        </nav>
+<!-- Barra de navegación -->
+<header class="navegacion">
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <h3>Portafolio<b>digital.</h3></b></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+
+                  <a class="nav-link" href="pages/contactame.html">Contáctame</a>
+                  <a class="nav-link" href="pages/web.html">Web</a>
+                  <a class="nav-link" href="pages/uxui.html">UX/UI</a>
+                  <a class="nav-link" href="pages/otros.html">Otros proyectos</a>  
+                </div>
+              </div>
+            </div>
+          </nav>
 
     </header>
 
+<body> 
+
 <!-- Hero -->
-    <div>
+    <div class="hero-texto">
         <h1>
-            Pensando en las personas
+            Investigo, luego actúo
         </h1>
         <h2>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt obcaecati architecto illum eius voluptate perspiciatis expedita incidunt cum magnam possimus delectus soluta omnis, perferendis cumque dignissimos, impedit consequuntur eaque. Quas!
+            Profundizando en las necesidades de los usuarios.
         </h2>
-        <img src="../media/Imagen.jpg" alt="wireframe">
+    <div class="boton-dos">
+            <a href="pages/contactame.html">Contáctame</a>
+    </div> 
     </div>
 
-<!-- Primer proyecto -->
+<!-- proyecto mikan -->
+<section class="proyectos-ux">
     <div>
-        <h3>
-            Mikan
-        </h3>
-
-        <img src="../media/Imagen3.png" alt="imagen-wireframe">
-
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cum libero repellendus veniam adipisci nihil, dolores vitae asperiores rerum, temporibus placeat quibusdam vero similique fugiat? Ad nihil molestiae alias ut?
-        </p>
-
-        <ol>
-            <li>
-                <p>Etapa 1</p>
-            </li>
-            <li>
-                <p>Etapa 2</p>
-            </li>
-            <li>
-                <p>Etapa 3</p>
-            </li>
-            <li>
-                <p>Etapa 4</p>
-            </li>
-        </ol>
-
+        <img src="../media/mikan-ux-mockup.png" alt="imagen-prototipo">
     </div>
 
-<!-- Segundo proyecto -->
     <div>
-        <h3>
-        Mikan
-        </h3>
-
-        <img src="../media/Imagen3.png" alt="imagen-wireframe">
-
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cum libero repellendus veniam adipisci nihil, dolores vitae asperiores rerum, temporibus placeat quibusdam vero similique fugiat? Ad nihil molestiae alias ut?
+        <h2>
+            <b>¿De qué va</b> el proyecto?
+            <span>Hacemos que <b>a su perro 
+                y su bienestar</b> sea fácil de lograr</span>
+        </h2>
+        <p class="texto-web">
+            Una aplicación que ayuda a los dueños a monitorizar los aspectos esenciales de la vida de sus perritos, nos encargamos de brindarle guías de temas específicos, sugerencias de cuidado, tips y artículos de interés escritos por expertos para que ellos sepan qué es lo mejor para sus perros.
         </p>
-
-        <ol>
-            <li>
-                <p>Etapa 1</p>
-            </li>
-            <li>
-                <p>Etapa 2</p>
-            </li>
-            <li>
-                <p>Etapa 3</p>
-            </li>
-            <li>
-                <p>Etapa 4</p>
-            </li>
-        </ol>
-
+    </div>
+</section>
+    <div class="logos-ux">
+        <img class="imagen-1" src="../media/android-ux.png" alt="android logo">
+        <img  src="../media/icono-illustrator.png" alt="illustrator logo">
+        <img src="../media/figma.png" alt="figma logo">
     </div>
 
 
-    <footer>
-        <h3>
+    <footer class="pie">
+        <p>
             Jessmorgado19@gmail.com
-        </h3>
-
-
+             Todos los derechos reservados
+    
+        </p>
+        
 
     </footer>
     
+    
 </body>
+    <script src="h ttps://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </html>
