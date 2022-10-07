@@ -1,0 +1,42 @@
+/* media queris */
+
+@media (min-width: 600px){
+    /* estilos nuevos del main*/
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: 2fr 1fr 1fr ;
+        grid-template-areas: 
+        "h1 imagen-hero"
+        "h3 imagen-hero"
+        "btn imagen-hero";
+        justify-content: flex-start;
+        justify-items: center;
+        h1{
+            grid-area: h1;
+            font-size: 5rem;
+            text-align: start; 
+            margin-bottom: 0.5rem;
+            margin-left: 0;
+        }
+        .imagen-hero{
+            grid-area: imagen-hero;
+        }
+        h3{
+            grid-area: h3;
+            margin-top: 1rem;
+            margin-left: 0;
+            grid-area: h3;
+            font-size: 1.8rem;
+            text-align: start;
+        }   
+        .btn{
+            grid-area: btn;
+            a{
+                font-size: 1.6rem;
+            }
+        }
+
+    }
+}

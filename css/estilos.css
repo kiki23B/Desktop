@@ -3,3 +3,168 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+/* estilos de body */
+.cuerpo {
+  background-color: #FDFDFD;
+  font-family: 'Inter', sans-serif;
+  color: #4D4F51; }
+
+/* header */
+.navegacion {
+  background-color: #fff;
+  font-size: 1rem;
+  color: #4D4F51;
+  box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.25);
+  position: fixed;
+  width: 100vw;
+  height: 4rem;
+  left: 0;
+  top: 0;
+  z-index: 999; }
+  .navegacion h3 {
+    font-size: 1.5rem; }
+  .navegacion #navbarNavAltMarkup {
+    background-color: #fff; }
+
+/*estilos del main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F8E882;
+  border-radius: .8rem;
+  margin: 6.5rem 1.4rem 1.4rem 1.4rem;
+  padding: 5rem; }
+  main h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1rem; }
+    main h1 span {
+      display: block; }
+  main h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1rem; }
+  main .btn {
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    background-color: #fff;
+    background-image: radial-gradient(at 45% 16%, #ffd0c2 0px, transparent 50%), radial-gradient(at 9% 96%, #b4eff4 0px, transparent 50%), radial-gradient(at 0% 50%, #ffdbde 0px, transparent 50%), radial-gradient(at 98% 58%, #f3c9db 0px, transparent 50%); }
+    main .btn a {
+      align-self: center;
+      text-align: center;
+      text-decoration: none; }
+  main .imagen-hero {
+    display: none; }
+  main .imagen-hero-mobil {
+    height: 2rem;
+    margin-top: 2rem; }
+    main .imagen-hero-mobil img {
+      max-width: 20rem; }
+
+/*proyectos*/
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  section .uxui {
+    margin-top: 2rem;
+    background-color: #F8E882;
+    border-radius: 1rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    width: 27rem; }
+    section .uxui .ux-ui-titulo {
+      font-size: 1rem;
+      font-weight: 600; }
+    section .uxui .web-uxui {
+      display: none; }
+    section .uxui .mobile-uxui {
+      max-height: 10rem;
+      padding-left: 6rem; }
+  section .web {
+    margin-top: 2rem;
+    background-color: #F8E882;
+    border-radius: 1rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    width: 27rem; }
+    section .web .web-titulo {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-weight: 600; }
+    section .web .web-web {
+      display: none; }
+    section .web .mobile-web {
+      max-width: 20rem;
+      padding-left: 2rem; }
+  section .branding {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #F8E882;
+    border-radius: 1rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    width: 27rem; }
+    section .branding h2 {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-weight: 600; }
+    section .branding .mobile-branding {
+      max-width: 20rem;
+      padding-left: 8rem; }
+
+.pie {
+  background-color: antiquewhite;
+  height: 10rem;
+  display: flex;
+  flex-direction: row; }
+  .pie p {
+    font-weight: bolder;
+    text-align: start;
+    margin: 2rem 3rem;
+    padding-left: 1rem;
+    padding-top: 3rem; }
+    .pie p span {
+      display: block; }
+  .pie img {
+    max-width: 3rem;
+    max-height: 3rem;
+    position: relative;
+    top: 5rem;
+    padding: 0.5rem; }
+
+/* media queris */
+@media (min-width: 600px) {
+  /* estilos nuevos del main*/
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: "h1 imagen-hero" "h3 imagen-hero" "btn imagen-hero";
+    justify-content: flex-start;
+    justify-items: center; }
+    main h1 {
+      grid-area: h1;
+      font-size: 5rem;
+      text-align: start;
+      margin-bottom: 0.5rem;
+      margin-left: 0; }
+    main .imagen-hero {
+      grid-area: imagen-hero; }
+    main h3 {
+      grid-area: h3;
+      margin-top: 1rem;
+      margin-left: 0;
+      grid-area: h3;
+      font-size: 1.8rem;
+      text-align: start; }
+    main .btn {
+      grid-area: btn; }
+      main .btn a {
+        font-size: 1.6rem; } }
