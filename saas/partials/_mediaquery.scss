@@ -1,42 +1,83 @@
 /* media queris */
 
-@media (min-width: 600px){
+@media (min-width: 700px){
     /* estilos nuevos del main*/
 
     main{
         display: grid;
         grid-template-columns: repeat(2,2fr);
-        grid-template-rows: 2fr 1fr 1fr ;
+        grid-template-rows: 1.5fr 0.5fr 0.4fr ;
         grid-template-areas: 
         "h1 imagen-hero"
         "h3 imagen-hero"
         "btn imagen-hero";
         justify-content: flex-start;
-        justify-items: center;
+        justify-items: flex-start;
         h1{
             grid-area: h1;
             font-size: 5rem;
             text-align: start; 
-            margin-bottom: 0.5rem;
             margin-left: 0;
         }
         .imagen-hero{
             grid-area: imagen-hero;
+            display: inline;
         }
         h3{
             grid-area: h3;
-            margin-top: 1rem;
             margin-left: 0;
-            grid-area: h3;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             text-align: start;
         }   
         .btn{
             grid-area: btn;
+            align-items: auto;
+        
+
             a{
-                font-size: 1.6rem;
+                font-size: 1.3rem;
             }
         }
 
+        .imagen-hero-mobil{
+            display:none;
+        }
+
+    }
+    /*Protectos*/
+    section{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: end;
+        align-items: stretch;
+        gap: 1.6rem;
+        margin-top: 1rem;
+        margin-right: 1.4rem;
+        .uxui{
+            display:flex;
+            flex-direction: column;
+            justify-content: end;
+            height:15.5rem;
+            width: 20rem;
+            .ux-ui{
+                font-size: 2rem;
+                font-weight: 300;
+            }
+            .mobile-uxui{
+                height: min-content;
+                padding: 0;
+            }
+            
+        }
+    
+        }
+
+        .web{
+            height: 15.5rem;
+        }
+        .branding{
+            height: 15.5rem;
+            
+        
     }
 }
