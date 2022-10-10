@@ -15,7 +15,7 @@
         justify-items: flex-start;
         h1{
             grid-area: h1;
-            font-size: 5rem;
+            font-size: $titulo-web;
             text-align: start; 
             margin-left: 0;
         }
@@ -26,7 +26,7 @@
         h3{
             grid-area: h3;
             margin-left: 0;
-            font-size: 1.5rem;
+            font-size: $subtitulo-web;
             text-align: start;
         }   
         .btn{
@@ -35,7 +35,7 @@
         
 
             a{
-                font-size: 1.3rem;
+                font-size: $texto-web;
             }
         }
 
@@ -54,13 +54,9 @@
         margin-top: 1rem;
         margin-right: 1.4rem;
         .uxui{
-            display:flex;
-            flex-direction: column;
-            justify-content: end;
-            height:15.5rem;
-            width: 20rem;
-            .ux-ui{
-                font-size: 2rem;
+            @include cards-home;
+            .uxui-titulo{
+                font-size: $subtitulo-web;
                 font-weight: 300;
             }
             .mobile-uxui{
@@ -69,15 +65,51 @@
             }
             
         }
-    
-        }
-
         .web{
-            height: 15.5rem;
+            @include cards-home;
+            .web-titulo{
+                font-size: $subtitulo-web;
+                font-weight: 300;
+                padding-bottom: 2rem;
+                .mobile-web{
+                    height: 35rem;
+                    padding: 0;
+                }
+            }
         }
         .branding{
-            height: 15.5rem;
+            @include cards-home;
+            .branding-titulo{
+                font-size: $subtitulo-web;
+                font-weight: 300;
+                .mobile-branding{
+                    height: 20rem;
+                }
+            }
+        }  
+        }
+        .pie{
+            height: 15rem;
+            p{
+                font-size: $texto-web;
+                margin: 3rem 4rem;
+                padding-left: 2rem;
+            }
+            img{
+                max-width: 5rem;
+                max-height: 5rem;
+                position: relative;
+                top: 7rem;
+                left: 40rem;
+            }
+        
+            
+            
+            
+        }
+
+        
             
         
-    }
+    
 }

@@ -1,6 +1,7 @@
 //estilos del home
 
 @import "variables";
+@import "mixin";
 
 /* estilos de body */
 
@@ -153,31 +154,9 @@ section{
 
     }
 }
-
+/*estilos del footer*/
 .pie{
-    background-color: antiquewhite;
-    height: 10rem;
-    display: flex;
-    flex-direction: row;
-    p{
-        font-weight: bolder;
-        text-align: start;
-        margin: 2rem 3rem ;
-        padding-left: 1rem;
-        padding-top: 3rem;
-        span{
-            display: block;
-        }
-     }
-     img{
-        max-width: 3rem;
-        max-height: 3rem;
-        position: relative;
-        top: 5rem;
-        padding: 0.5rem;
-        
-     }
-
+    @include pie-movil;
 }
 
 

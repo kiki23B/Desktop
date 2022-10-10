@@ -119,12 +119,14 @@ section {
       max-width: 20rem;
       padding-left: 8rem; }
 
+/*estilos del footer*/
 .pie {
   background-color: antiquewhite;
   height: 10rem;
   display: flex;
   flex-direction: row; }
   .pie p {
+    font-size: 0.75rem;
     font-weight: bolder;
     text-align: start;
     margin: 2rem 3rem;
@@ -166,7 +168,7 @@ section {
       grid-area: btn;
       align-items: auto; }
       main .btn a {
-        font-size: 1.3rem; }
+        font-size: 1.125rem; }
     main .imagen-hero-mobil {
       display: none; }
   /*Protectos*/
@@ -184,13 +186,45 @@ section {
       justify-content: end;
       height: 15.5rem;
       width: 20rem; }
-      section .uxui .ux-ui {
-        font-size: 2rem;
+      section .uxui .uxui-titulo {
+        font-size: 1.5rem;
         font-weight: 300; }
       section .uxui .mobile-uxui {
         height: min-content;
         padding: 0; }
-  .web {
-    height: 15.5rem; }
-  .branding {
-    height: 15.5rem; } }
+    section .web {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      height: 15.5rem;
+      width: 20rem; }
+      section .web .web-titulo {
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding-bottom: 2rem; }
+        section .web .web-titulo .mobile-web {
+          height: 35rem;
+          padding: 0; }
+    section .branding {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      height: 15.5rem;
+      width: 20rem; }
+      section .branding .branding-titulo {
+        font-size: 1.5rem;
+        font-weight: 300; }
+        section .branding .branding-titulo .mobile-branding {
+          height: 20rem; }
+  .pie {
+    height: 15rem; }
+    .pie p {
+      font-size: 1.125rem;
+      margin: 3rem 4rem;
+      padding-left: 2rem; }
+    .pie img {
+      max-width: 5rem;
+      max-height: 5rem;
+      position: relative;
+      top: 7rem;
+      left: 40rem; } }
