@@ -1,5 +1,25 @@
 // cards proyectos versión web
 
+@mixin b-navegacion{
+    background-color: #fff;
+    font-size: $subtitulo;
+    color: #4D4F51;
+    box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.25);
+    position: fixed;
+    width: 100vw;
+    height: 4rem;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    h3{
+        font-size: 1.5rem;
+    }
+    #navbarNavAltMarkup{
+        background-color: #fff;
+    }   
+}
+
+
 @mixin cards-home{
     display: flex;
       flex-direction: column;
