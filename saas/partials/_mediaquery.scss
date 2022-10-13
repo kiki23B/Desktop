@@ -9,7 +9,7 @@
         grid-template-rows: 1.5fr 0.5fr 0.4fr ;
         grid-template-areas: 
         "h1 imagen-hero"
-        "h3 imagen-hero"
+        "h2 imagen-hero"
         "btn imagen-hero";
         justify-content: flex-start;
         justify-items: flex-start;
@@ -23,8 +23,8 @@
             grid-area: imagen-hero;
             display: inline;
         }
-        h3{
-            grid-area: h3;
+        h2{
+            grid-area: h2;
             margin-left: 0;
             font-size: $subtitulo-web;
             text-align: start;
@@ -44,7 +44,7 @@
         }
 
     }
-    /*Protectos*/
+    /*Sección de proyectos*/
     section{
         display: flex;
         flex-flow: row nowrap;
@@ -88,6 +88,7 @@
             }
         }  
         }
+        /*footer*/
         .pie{
             height: 15rem;
             width: 100vw;
@@ -102,15 +103,36 @@
                 position: relative;
                 top: 7rem;
                 left: 40rem;
-            }
-        
-            
-            
-            
+            }   
         }
+        
+        /*Estilos para página de UX versión web*/
+        /*Estilos de hero*/
 
+        .hero-grid{
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+            grid-template-rows: 1.5fr 0.5fr 0.4fr ;
+            grid-template-areas: 
+            "h1 imagen-ux-hero"
+            "h2 imagen-ux-hero"
+            "btn imagen-ux-hero";
+            justify-content: flex-start;
+            justify-items: flex-start;
+            h1{
+                grid-area: h1;
+            }
+            h2{
+                grid-area: h2;
         
-            
-        
-    
+            }
+            .img-ux-hero{
+                grid-area: img-ux-hero;
+            }
+            .btn{
+                grid-area: btn;
+            }
+
+        }
 }
+
