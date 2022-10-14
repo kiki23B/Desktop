@@ -88,7 +88,7 @@
             }
         }  
         }
-        /*footer*/
+        /*footer home*/
         .pie{
             height: 15rem;
             width: 100vw;
@@ -106,33 +106,40 @@
             }   
         }
         
-        /*Estilos para página de UX versión web*/
+    }
+
+    /*Estilos para página de UX versión web*/
         /*Estilos de hero*/
 
-        .hero-grid{
-            display: grid;
-            grid-template-columns: repeat(2,2fr);
-            grid-template-rows: 1.5fr 0.5fr 0.4fr ;
-            grid-template-areas: 
-            "h1 imagen-ux-hero"
-            "h2 imagen-ux-hero"
-            "btn imagen-ux-hero";
-            justify-content: flex-start;
-            justify-items: flex-start;
-            h1{
-                grid-area: h1;
+        @media (min-width: 700px){
+
+            .cuerpo-ux{
+                background-color: rgb(0, 220, 220);
+                color: aqua;
             }
-            h2{
-                grid-area: h2;
-        
-            }
-            .img-ux-hero{
-                grid-area: img-ux-hero;
-            }
-            .btn{
-                grid-area: btn;
-            }
+
+            section{
+                display: grid;
+                grid-template-columns: repeat(2,2fr);
+                grid-template-rows: 0.5fr 0.5fr 0.4fr ;
+                grid-template-areas: 
+                "h1 imagen-ux-hero"
+                "h2 imagen-ux-hero"
+                "btn imagen-ux-hero";
+                justify-content: flex-start;
+                justify-items: flex-start;
+                h1{
+                   grid-area:h1;
+                }
+                h2{
+                   grid-area:h2;
+                }
+                .img-ux-hero{
+                   grid-area:img-ux-hero;
+                }
+                .btn{
+                   grid-area:btn;
+                }
 
         }
 }
-

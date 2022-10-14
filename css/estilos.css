@@ -45,7 +45,7 @@ main {
     main h1 span {
       display: block; }
   main h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
     text-align: center;
     margin-bottom: 1rem; }
@@ -82,7 +82,7 @@ section {
     padding-left: 2rem;
     width: 27rem; }
     section .uxui .ux-ui-titulo {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 600; }
     section .uxui .web-uxui {
       display: none; }
@@ -98,7 +98,7 @@ section {
     width: 27rem; }
     section .web .web-titulo {
       margin-bottom: 1rem;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 600; }
     section .web .web-web {
       display: none; }
@@ -115,7 +115,7 @@ section {
     width: 27rem; }
     section .branding h2 {
       margin-bottom: 1rem;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 600; }
     section .branding .mobile-branding {
       max-width: 20rem;
@@ -218,7 +218,7 @@ section {
         font-weight: 300; }
         section .branding .branding-titulo .mobile-branding {
           height: 20rem; }
-  /*footer*/
+  /*footer home*/
   .pie {
     height: 15rem;
     width: 100vw; }
@@ -231,28 +231,33 @@ section {
       max-height: 5rem;
       position: relative;
       top: 7rem;
-      left: 40rem; }
-  /*Estilos para página de UX versión web*/
-  /*Estilos de hero*/
-  .hero-grid {
+      left: 40rem; } }
+
+/*Estilos para página de UX versión web*/
+/*Estilos de hero*/
+@media (min-width: 700px) {
+  .cuerpo-ux {
+    background-color: #00dcdc;
+    color: aqua; }
+  section {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: 1.5fr 0.5fr 0.4fr;
+    grid-template-rows: 0.5fr 0.5fr 0.4fr;
     grid-template-areas: "h1 imagen-ux-hero" "h2 imagen-ux-hero" "btn imagen-ux-hero";
     justify-content: flex-start;
     justify-items: flex-start; }
-    .hero-grid h1 {
+    section h1 {
       grid-area: h1; }
-    .hero-grid h2 {
+    section h2 {
       grid-area: h2; }
-    .hero-grid .img-ux-hero {
+    section .img-ux-hero {
       grid-area: img-ux-hero; }
-    .hero-grid .btn {
+    section .btn {
       grid-area: btn; } }
 
 /*estilos de página UX-UI*/
 /* estilos de body */
-.cuerpo {
+.cuerpo-ux {
   background-color: #FDFDFD;
   font-family: 'Inter', sans-serif;
   color: #4D4F51; }
@@ -284,32 +289,28 @@ section {
   padding-bottom: 5rem;
   background-image: radial-gradient(at 45% 16%, #ffd0c2 0px, transparent 50%), radial-gradient(at 9% 96%, #b4eff4 0px, transparent 50%), radial-gradient(at 0% 50%, #ffdbde 0px, transparent 50%), radial-gradient(at 98% 58%, #f3c9db 0px, transparent 50%);
   background-size: cover; }
-  .hero-texto article {
+  .hero-texto h1 {
+    font-size: 2rem;
+    font-weight: 900; }
+    .hero-texto h1 span {
+      display: block; }
+  .hero-texto h2 {
+    font-size: 1.2rem;
+    font-weight: 300; }
+    .hero-texto h2 span {
+      display: block; }
+  .hero-texto .btn {
     display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .hero-texto article h1 {
-      font-size: 2rem;
-      font-weight: 900; }
-      .hero-texto article h1 span {
-        display: block; }
-    .hero-texto article h2 {
-      font-size: 1.5rem;
-      font-weight: 300; }
-      .hero-texto article h2 span {
-        display: block; }
-    .hero-texto article .btn {
-      display: flex;
-      border-radius: 2rem;
-      padding: 0.5rem 1rem 0.5rem 1rem;
-      background-color: #fff;
-      background-image: radial-gradient(at 45% 16%, #ffd0c2 0px, transparent 50%), radial-gradient(at 9% 96%, #b4eff4 0px, transparent 50%), radial-gradient(at 0% 50%, #ffdbde 0px, transparent 50%), radial-gradient(at 98% 58%, #f3c9db 0px, transparent 50%);
-      margin: 0; }
-      .hero-texto article .btn a {
-        text-align: center;
-        text-decoration: none; }
-    .hero-texto article .img-ux-hero {
-      display: none; }
+    border-radius: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: #fff;
+    background-image: radial-gradient(at 45% 16%, #ffd0c2 0px, transparent 50%), radial-gradient(at 9% 96%, #b4eff4 0px, transparent 50%), radial-gradient(at 0% 50%, #ffdbde 0px, transparent 50%), radial-gradient(at 98% 58%, #f3c9db 0px, transparent 50%);
+    margin: 0; }
+    .hero-texto .btn a {
+      text-align: center;
+      text-decoration: none; }
+  .hero-texto .ux-hero {
+    display: none; }
 
 /* estilo de Mikan*/
 .proyectos-ux {
@@ -324,7 +325,7 @@ section {
     width: 90%;
     margin-bottom: 2rem; }
   .proyectos-ux h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500; }
     .proyectos-ux h2 span {
       display: block;
@@ -356,9 +357,35 @@ section {
     padding-top: 3rem; }
     .pie-ux p span {
       display: block; }
-  .pie-ux img {
+  .pie-ux .li {
     max-width: 3rem;
     max-height: 3rem;
     position: relative;
     top: 5rem;
     padding: 0.5rem; }
+  .pie-ux .fb {
+    max-width: 3rem;
+    max-height: 3rem;
+    position: relative;
+    top: 5rem;
+    padding: 0.5rem; }
+
+/*Estilos para página de UX versión web*/
+/*Estilos de hero*/
+@media (min-width: 700px) {
+  .hero-texto {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 0.5fr 0.5fr 0.4fr;
+    grid-template-areas: "h1 ux-hero" "h2 ux-hero" "btn ux-hero";
+    justify-content: flex-start;
+    justify-items: flex-start; }
+    .hero-texto h1 {
+      grid-area: h1; }
+    .hero-texto h2 {
+      grid-area: h2; }
+    .hero-texto .ux-hero {
+      grid-area: ux-hero;
+      display: block; }
+    .hero-texto .btn {
+      grid-area: btn; } }

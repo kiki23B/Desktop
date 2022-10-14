@@ -1,7 +1,8 @@
 /*estilos de página UX-UI*/
 /* estilos de body */
 
-.cuerpo{
+
+.cuerpo-ux{
     background-color: #FDFDFD;
     font-family: 'Inter', sans-serif;
     color: #4D4F51;
@@ -20,44 +21,40 @@
     padding-bottom: 5rem;
     background-image: $color-degradado;
     background-size: cover;
-    article{
+    h1{
+        font-size: $titulo;
+        font-weight: 900;
+        span{
+            display: block;
+            }
+        }
+    h2{
+        font-size: $subtitulo;
+        font-weight: 300;
+        span{
+            display: block;
+            }
+        }
+    .btn{
         display: flex;
-        flex-direction: column;
-        align-items:center;
-        h1{
-            font-size: $titulo;
-            font-weight: 900;
-            span{
-                display: block;
+        border-radius: 2rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        background-color: #fff;
+        background-image: $color-degradado;
+        margin: 0;
+        a{
+            text-align: center;
+            text-decoration: none;
             }
         }
-        h2{
-            font-size: $subtitulo;
-            font-weight: 300;
-            span{
-                display: block;
-            }
+    .ux-hero{
+        display: none;
         }
-        .btn{
-            display: flex;
-            border-radius: 2rem;
-            padding: 0.5rem 1rem 0.5rem 1rem;
-            background-color: #fff;
-            background-image: $color-degradado;
-            margin: 0;
-            a{
-                text-align: center;
-                text-decoration: none;
-            }
-        }
-        .img-ux-hero{
-            display: none;
-        }
-        }
-    
-    
-    
 }
+    
+    
+    
+
 /* estilo de Mikan*/
 
 .proyectos-ux{
@@ -97,7 +94,7 @@
 
 /*estilos del footer*/
 .pie-ux{
-    background-color: antiquewhite;
+        background-color: antiquewhite;
         height: 10rem;
         display: flex;
         flex-direction: row;
@@ -112,13 +109,52 @@
                 display: block;
             }
          }
-         img{
+         .li{
             max-width: 3rem;
             max-height: 3rem;
             position: relative;
             top: 5rem;
             padding: 0.5rem;
-         }   
+         }
+         .fb{
+            max-width: 3rem;
+            max-height: 3rem;
+            position: relative;
+            top: 5rem;
+            padding: 0.5rem;
+         }
 }
 
+/*Estilos para página de UX versión web*/
+        /*Estilos de hero*/
 
+        @media (min-width: 700px){
+
+            .hero-texto{
+                display: grid;
+                grid-template-columns: repeat(2,2fr);
+                grid-template-rows: 0.5fr 0.5fr 0.4fr ;
+                grid-template-areas: 
+                "h1 ux-hero"
+                "h2 ux-hero"
+                "btn ux-hero";
+                justify-content: flex-start;
+                justify-items: flex-start;
+                h1{
+                   grid-area:h1;
+                }
+                h2{
+                   grid-area:h2;
+                }
+                .ux-hero{
+                   grid-area:ux-hero;
+                   display: block;
+                }
+                .btn{
+                   grid-area:btn;
+                }
+
+        }
+
+
+    }
