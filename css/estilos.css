@@ -379,7 +379,9 @@ section {
     grid-template-rows: 0.5fr 0.5fr 0.4fr;
     grid-template-areas: "h1 ux-hero" "h2 ux-hero" "btn ux-hero";
     justify-content: flex-start;
-    justify-items: flex-start; }
+    justify-items: flex-start;
+    margin: 2rem;
+    background-image: none; }
     .hero-texto h1 {
       grid-area: h1; }
     .hero-texto h2 {
