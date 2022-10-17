@@ -32,8 +32,6 @@
         .btn{
             grid-area: btn;
             align-items: auto;
-        
-
             a{
                 font-size: $texto-web;
             }
@@ -107,39 +105,3 @@
         }
         
     }
-
-    /*Estilos para página de UX versión web*/
-        /*Estilos de hero*/
-
-        @media (min-width: 700px){
-
-            .cuerpo-ux{
-                background-color: rgb(0, 220, 220);
-                color: aqua;
-            }
-
-            section{
-                display: grid;
-                grid-template-columns: repeat(2,2fr);
-                grid-template-rows: 0.5fr 0.5fr 0.4fr ;
-                grid-template-areas: 
-                "h1 imagen-ux-hero"
-                "h2 imagen-ux-hero"
-                "btn imagen-ux-hero";
-                justify-content: flex-start;
-                justify-items: flex-start;
-                h1{
-                   grid-area:h1;
-                }
-                h2{
-                   grid-area:h2;
-                }
-                .img-ux-hero{
-                   grid-area:img-ux-hero;
-                }
-                .btn{
-                   grid-area:btn;
-                }
-
-        }
-}

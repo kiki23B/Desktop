@@ -233,28 +233,6 @@ section {
       top: 7rem;
       left: 40rem; } }
 
-/*Estilos para página de UX versión web*/
-/*Estilos de hero*/
-@media (min-width: 700px) {
-  .cuerpo-ux {
-    background-color: #00dcdc;
-    color: aqua; }
-  section {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: 0.5fr 0.5fr 0.4fr;
-    grid-template-areas: "h1 imagen-ux-hero" "h2 imagen-ux-hero" "btn imagen-ux-hero";
-    justify-content: flex-start;
-    justify-items: flex-start; }
-    section h1 {
-      grid-area: h1; }
-    section h2 {
-      grid-area: h2; }
-    section .img-ux-hero {
-      grid-area: img-ux-hero; }
-    section .btn {
-      grid-area: btn; } }
-
 /*estilos de página UX-UI*/
 /* estilos de body */
 .cuerpo-ux {
@@ -376,18 +354,104 @@ section {
   .hero-texto {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: 0.5fr 0.5fr 0.4fr;
+    grid-template-rows: 1.5fr 0.5fr 0.4fr;
     grid-template-areas: "h1 ux-hero" "h2 ux-hero" "btn ux-hero";
-    justify-content: flex-start;
-    justify-items: flex-start;
-    margin: 2rem;
-    background-image: none; }
+    row-gap: 0.5rem;
+    justify-content: start;
+    justify-items: center;
+    background-image: none;
+    margin: 0.5rem 6rem 1rem 6rem; }
     .hero-texto h1 {
-      grid-area: h1; }
+      grid-area: h1;
+      font-size: 5rem;
+      text-align: start;
+      justify-self: flex-start; }
     .hero-texto h2 {
-      grid-area: h2; }
+      grid-area: h2;
+      font-size: 1.5rem;
+      font-weight: 300;
+      text-align: start;
+      align-self: flex-start;
+      justify-self: flex-start; }
     .hero-texto .ux-hero {
       grid-area: ux-hero;
-      display: block; }
+      display: block;
+      margin-top: 0.5rem; }
     .hero-texto .btn {
-      grid-area: btn; } }
+      grid-area: btn;
+      justify-self: flex-start;
+      align-self: flex-start; }
+      .hero-texto .btn a {
+        font-size: 1.125rem; }
+  /* estilos de proyecto mikan */
+  .proyectos-ux {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 0.5fr 0.5fr 0.4fr;
+    grid-template-areas: "img-ux-mikan introduccion" "img-ux-mikan texto-web" "img-ux-mikan logos-ux";
+    row-gap: 0.5rem; }
+    .proyectos-ux .img-ux-mikan {
+      grid-area: img-ux-mikan; }
+    .proyectos-ux .introduccion {
+      grid-area: introduccion;
+      font-size: 1.5rem;
+      font-weight: 500;
+      align-self: flex-end; }
+    .proyectos-ux .texto-web {
+      grid-area: texto-web;
+      font-size: 1.125rem; }
+    .proyectos-ux .logos-ux {
+      grid-area: logos-ux;
+      margin-left: 0; } }
+
+/*estilos de página contáctame*/
+/* estilos de body */
+.cuerpo-ux {
+  background-color: #FDFDFD;
+  font-family: 'Inter', sans-serif;
+  color: #4D4F51; }
+
+/*navegación*/
+.navegacion {
+  background-color: #fff;
+  font-size: 1rem;
+  color: #4D4F51;
+  box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.25);
+  position: fixed;
+  width: 100vw;
+  height: 4rem;
+  left: 0;
+  top: 0;
+  z-index: 999; }
+  .navegacion h3 {
+    font-size: 1.5rem; }
+  .navegacion #navbarNavAltMarkup {
+    background-color: #fff; }
+
+/*hero contacto*/
+.hero-contacto {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  background-image: radial-gradient(at 45% 16%, #ffd0c2 0px, transparent 50%), radial-gradient(at 9% 96%, #b4eff4 0px, transparent 50%), radial-gradient(at 0% 50%, #ffdbde 0px, transparent 50%), radial-gradient(at 98% 58%, #f3c9db 0px, transparent 50%);
+  padding: 10rem 5rem 3rem 5rem;
+  margin: 1rem;
+  border-radius: 1rem; }
+  .hero-contacto h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center; }
+  .hero-contacto h2 {
+    font-size: 1.2rem;
+    font-weight: 500; }
+    .hero-contacto h2 span {
+      display: block; }
+  .hero-contacto p {
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+    display: block; }
+
+/*carrusel*/
+#primercarrusel {
+  width: 25rem; }

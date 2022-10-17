@@ -1,0 +1,47 @@
+/*estilos de página contáctame*/
+/* estilos de body */
+
+
+.cuerpo-ux{
+    background-color: #FDFDFD;
+    font-family: 'Inter', sans-serif;
+    color: #4D4F51;
+}
+/*navegación*/
+.navegacion{
+    @include b-navegacion;
+}
+/*hero contacto*/
+.hero-contacto{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    background-image: $color-degradado;
+    padding: 10rem 5rem 3rem 5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    h1{
+        font-size: $titulo;
+        font-weight: bold;
+        text-align: center;
+    }
+    h2{
+        font-size: $subtitulo;
+        font-weight: 500;
+        span{
+            display: block;
+        }
+    }
+    p{
+        font-size: $texto;
+        font-weight: 200;
+        text-align: center;
+        display: block;
+    }
+}
+/*carrusel*/
+
+#primercarrusel{
+    width: 25rem;
+    
+}

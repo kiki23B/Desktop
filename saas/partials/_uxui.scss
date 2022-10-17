@@ -133,30 +133,77 @@
             .hero-texto{
                 display: grid;
                 grid-template-columns: repeat(2,2fr);
-                grid-template-rows: 0.5fr 0.5fr 0.4fr ;
+                grid-template-rows: 1.5fr 0.5fr 0.4fr ;
                 grid-template-areas: 
                 "h1 ux-hero"
                 "h2 ux-hero"
                 "btn ux-hero";
-                justify-content: flex-start;
-                justify-items: flex-start;
-                margin: 2rem;
+                row-gap: 0.5rem;
+                justify-content: start;
+                justify-items: center;
                 background-image:none;
+                margin: 0.5rem 6rem 1rem 6rem;
                 h1{
                    grid-area:h1;
+                   font-size: $titulo-web;
+                   text-align: start;
+                   justify-self: flex-start;
                 }
                 h2{
                    grid-area:h2;
+                   font-size: $subtitulo-web;
+                   font-weight: 300;
+                   text-align: start;
+                   align-self: flex-start;
+                   justify-self: flex-start;
                 }
                 .ux-hero{
                    grid-area:ux-hero;
                    display: block;
+                   margin-top: 0.5rem;
                 }
                 .btn{
                    grid-area:btn;
+                   justify-self: flex-start;
+                   align-self: flex-start;
+                   a{
+                    font-size: $texto-web;
+                }
                 }
 
         }
 
+
+/* estilos de proyecto mikan */
+
+        .proyectos-ux{
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+            grid-template-rows: 0.5fr 0.5fr 0.4fr ;
+            grid-template-areas: 
+            "img-ux-mikan introduccion"
+            "img-ux-mikan texto-web"
+            "img-ux-mikan logos-ux";
+            row-gap: 0.5rem;
+            .img-ux-mikan{
+                grid-area: img-ux-mikan;
+            }
+            .introduccion{
+                grid-area: introduccion;
+                font-size: $subtitulo-web;
+                font-weight: 500;
+                align-self: flex-end;
+            }
+            .texto-web{
+                grid-area: texto-web;
+                font-size: $texto-web;
+            }
+            .logos-ux{
+                grid-area: logos-ux;
+                margin-left: 0;
+            }
+            
+
+        }
 
     }
