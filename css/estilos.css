@@ -452,6 +452,23 @@ section {
     text-align: center;
     display: block; }
 
+/*acordeon*/
+.trayectoria {
+  background-color: #F9F9FF;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2rem 1rem 2rem 1rem;
+  border-radius: 0.5rem; }
+  .trayectoria h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1.5rem; }
+  .trayectoria .accordion-button {
+    background-color: #F8E882;
+    border-style: none;
+    border-radius: 0.2rem; }
+
 /*carrusel*/
 #primercarrusel {
+  margin-top: 2rem;
   width: 25rem; }
