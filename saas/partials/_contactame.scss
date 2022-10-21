@@ -2,7 +2,7 @@
 /* estilos de body */
 
 
-.cuerpo-ux{
+.cuerpo-contacto{
     background-color: #FDFDFD;
     font-family: 'Inter', sans-serif;
     color: #4D4F51;
@@ -38,6 +38,10 @@
         text-align: center;
         display: block;
     }
+    img{
+        margin-top: 2rem;
+        width: 20rem;
+    }
 }
 /*acordeon*/
 .trayectoria{
@@ -56,19 +60,72 @@
         background-color: $color-principal;
         border-style: none;
         border-radius: 0.2rem;
-
+    }     
     }
-
-
-        
-    }
-    
-
-
 /*carrusel*/
 
 #primercarrusel{
-    margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 25rem;
-    
 }
+
+@media (min-width: 700px){
+    /* estilos nuevos del pagina de contacto*/
+    .hero-contacto{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: 0.5fr 0.5fr 0.4fr ;
+        grid-template-areas: 
+        "h1 img"
+        "h2 img"
+        "p img";
+        row-gap:0.5rem;
+        margin: 6rem 1.5rem 1.5rem 1.5rem;
+        h1{
+            grid-area: h1;
+            justify-self: flex-start;
+            font-size: $titulo-web;
+            text-align: start;
+        }
+        h2{
+            grid-area: h2;
+            font-size: $subtitulo-web;
+            font-weight: 500;
+            justify-content: flex-start;
+        }
+        p{
+            grid-area: p;
+            font-size: $texto-web;
+            align-self: flex-start;
+            justify-self: flex-start;
+            
+        }
+        img{
+            grid-area: img;
+            width: 25rem;
+            align-self: center;
+            justify-self: flex-end;
+        }
+            
+
+        }
+        .trayectoria{
+            display: flex;
+            flex-direction: column;
+            h2{
+                font-size: $subtitulo-web;
+                text-align: center;   
+            }
+            .accordion{
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+        #primercarrusel{
+            width: 70%;
+            margin: 5rem;
+        }
+        
+        
+
+    }  

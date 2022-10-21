@@ -406,7 +406,7 @@ section {
 
 /*estilos de página contáctame*/
 /* estilos de body */
-.cuerpo-ux {
+.cuerpo-contacto {
   background-color: #FDFDFD;
   font-family: 'Inter', sans-serif;
   color: #4D4F51; }
@@ -451,6 +451,9 @@ section {
     font-weight: 200;
     text-align: center;
     display: block; }
+  .hero-contacto img {
+    margin-top: 2rem;
+    width: 20rem; }
 
 /*acordeon*/
 .trayectoria {
@@ -470,5 +473,47 @@ section {
 
 /*carrusel*/
 #primercarrusel {
-  margin-top: 2rem;
+  margin-bottom: 2rem;
   width: 25rem; }
+
+@media (min-width: 700px) {
+  /* estilos nuevos del pagina de contacto*/
+  .hero-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 0.5fr 0.5fr 0.4fr;
+    grid-template-areas: "h1 img" "h2 img" "p img";
+    row-gap: 0.5rem;
+    margin: 6rem 1.5rem 1.5rem 1.5rem; }
+    .hero-contacto h1 {
+      grid-area: h1;
+      justify-self: flex-start;
+      font-size: 5rem;
+      text-align: start; }
+    .hero-contacto h2 {
+      grid-area: h2;
+      font-size: 1.5rem;
+      font-weight: 500;
+      justify-content: flex-start; }
+    .hero-contacto p {
+      grid-area: p;
+      font-size: 1.125rem;
+      align-self: flex-start;
+      justify-self: flex-start; }
+    .hero-contacto img {
+      grid-area: img;
+      width: 25rem;
+      align-self: center;
+      justify-self: flex-end; }
+  .trayectoria {
+    display: flex;
+    flex-direction: column; }
+    .trayectoria h2 {
+      font-size: 1.5rem;
+      text-align: center; }
+    .trayectoria .accordion {
+      width: 70%;
+      margin: 0 auto; }
+  #primercarrusel {
+    width: 70%;
+    margin: 5rem; } }
