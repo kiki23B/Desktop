@@ -4,7 +4,6 @@
 
 .cuerpo-contacto{
     background-color: #FDFDFD;
-    font-family: 'Inter', sans-serif;
     color: #4D4F51;
 }
 /*navegación*/
@@ -45,7 +44,7 @@
 }
 /*acordeon*/
 .trayectoria{
-    background-color: #F9F9FF;
+    
     font-size: $texto;
     font-weight: 300;
     margin: 2rem 1rem 2rem 1rem;
@@ -60,71 +59,98 @@
         background-color: $color-principal;
         border-style: none;
         border-radius: 0.2rem;
-    }     
     }
-/*carrusel*/
+    }
+/*cards*/
 
-#primercarrusel{
-    margin-bottom: 2rem;
-    width: 25rem;
+.proyectos{
+    background-color: #ECEAFD;
+    padding: 1rem 10rem 1rem 10rem;
+    .card-group{
+        column-gap: 1rem;
+    }
+    
+    
 }
 
 @media (min-width: 700px){
-    /* estilos nuevos del pagina de contacto*/
+    /* estilos nuevos de pagina de contacto*/
     .hero-contacto{
         display: grid;
         grid-template-columns: repeat(2,2fr);
-        grid-template-rows: 0.5fr 0.5fr 0.4fr ;
+        grid-template-rows: 0.5fr 0.2fr 0.3fr ;
         grid-template-areas: 
         "h1 img"
         "h2 img"
         "p img";
         row-gap:0.5rem;
-        margin: 6rem 1.5rem 1.5rem 1.5rem;
+        margin: 6rem 3rem 3rem 3rem;
+        padding: 8rem 7rem 1rem 7rem;
         h1{
             grid-area: h1;
             justify-self: flex-start;
             font-size: $titulo-web;
+            font-weight: 900;
             text-align: start;
+            
         }
         h2{
             grid-area: h2;
             font-size: $subtitulo-web;
             font-weight: 500;
             justify-content: flex-start;
+            align-self: flex-start;
+            
         }
         p{
             grid-area: p;
             font-size: $texto-web;
             align-self: flex-start;
             justify-self: flex-start;
+            align-self: flex-start;
+            
             
         }
         img{
             grid-area: img;
             width: 25rem;
             align-self: center;
-            justify-self: flex-end;
+            justify-self: flex-start;
+            height: 26rem;
+            width: auto;    
         }
-            
-
         }
         .trayectoria{
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+            grid-template-rows: 0.5fr 1fr;
+            grid-template-areas: 
+             "h2 lottie-player"
+             "accordion lottie-player";
+            row-gap:0.5rem;
+            column-gap: 3.5rem;
+            margin: 2rem 10rem 3rem 10rem;
             h2{
+                grid-area: h2;
                 font-size: $subtitulo-web;
-                text-align: center;   
+                font-weight: 900;
+                align-self: flex-start;
+                margin: auto; 
             }
             .accordion{
-                width: 70%;
-                margin: 0 auto;
+                grid-area: accordion;
+            
+            }
+            lottie-player{
+                grid-area: lottie-player;
+                width: 30rem;
+                justify-self: center;
+
+                
             }
         }
-        #primercarrusel{
-            width: 70%;
-            margin: 5rem;
-        }
+        
+        
         
         
 
