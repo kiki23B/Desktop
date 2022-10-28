@@ -491,8 +491,14 @@ section {
 
 /*cards*/
 .proyectos {
+  display: flex;
+  flex-direction: column;
   background-color: #ECEAFD;
-  padding: 1rem 10rem 1rem 10rem; }
+  padding: 5rem 10rem 5rem 10rem; }
+  .proyectos h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: block; }
   .proyectos .card-group {
     column-gap: 1rem; }
 
@@ -550,4 +556,26 @@ section {
     .trayectoria lottie-player {
       grid-area: lottie-player;
       width: 30rem;
-      justify-self: center; } }
+      justify-self: center; }
+  .proyectos h2 {
+    display: inline;
+    font-size: 2rem;
+    font-weight: 500; }
+  .proyectos #card1, .proyectos #card2, .proyectos #card3 {
+    border-radius: 1rem;
+    background-color: #fbf3e9;
+    color: #4D4F51; }
+  /*footer home*/
+  .pie {
+    height: 15rem;
+    width: 100vw; }
+    .pie p {
+      font-size: 1.125rem;
+      margin: 3rem 4rem;
+      padding-left: 2rem; }
+    .pie img {
+      max-width: 5rem;
+      max-height: 5rem;
+      position: relative;
+      top: 7rem;
+      left: 40rem; } }
