@@ -1,0 +1,40 @@
+/*estilos de página otros proyectos*/
+/* estilos de body */
+
+
+.cuerpo-otros{
+    background-color: #FDFDFD;
+    font-family: 'Inter', sans-serif;
+    color: #4D4F51;
+}
+/*navegación*/
+.navegacion{
+    @include b-navegacion;
+}
+
+/* estilos de hero otros*/
+
+.hero-otros-proyectos{
+    margin-top: 6rem;
+    .titulo-otro{
+        font-size: $titulo;
+        font-weight: 500;
+        span{
+            font-weight: 800;
+        }
+    }
+    .descripcion-otro{
+        font-size: $subtitulo;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+.mosaico-img{
+    padding: 2rem;
+    .card{
+        border: none;
+    }
+    .card:hover{
+        box-shadow: 4px 4px 24px rgba(95, 93, 93, 0.25);
+    }
+}

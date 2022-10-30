@@ -1,0 +1,35 @@
+/*estilos de página web*/
+/* estilos de body */
+
+
+.cuerpo-web{
+    background-color: #FDFDFD;
+    font-family: 'Inter', sans-serif;
+    color: #4D4F51;
+}
+/*navegación*/
+.navegacion{
+    @include b-navegacion;
+}
+
+/* estilos de hero-web*/
+
+.hero-web{
+    display: flex;
+    flex-direction:column;
+    padding: 2rem;
+    .titulo-hero{
+        font-size: $titulo;
+        font-weight: 500;
+        margin-top: 2rem;
+        span{
+            font-weight: 800;
+        }
+    }
+    .desarrollo-web{
+        width: 25rem;
+        height: auto;
+        margin-top: 2rem;
+    }
+}
+

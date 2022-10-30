@@ -1,7 +1,7 @@
 // cards proyectos versión web
 
 @mixin b-navegacion{
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     font-size: $texto;
     color: #4D4F51;
     box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.25);
@@ -13,19 +13,31 @@
     z-index: 999;
     h3{
         font-size: 1.5rem;
+        color: #4D4F51;
     }
     #navbarNavAltMarkup{
         background-color: #fff;
-    }   
+        border-radius: 0.5rem;
+        }
+    .nav-link{
+        margin-left: 1rem;
+        font-size: $texto-web;
+    }
+    .nav-link:hover{
+        background-color: $color-principal;
+        color: rgb(75, 75, 75);
+        border-radius: .5rem;
+    }
+
 }
 
 
 @mixin cards-home{
     display: flex;
-      flex-direction: column;
-      justify-content: end;
-      height: 15.5rem;
-      width: 20rem;
+    flex-direction: column;
+    justify-content: end;
+    height: 15.5rem;
+    width: 20rem;
 }
 
 @mixin pie-movil{
