@@ -12,7 +12,7 @@
     top: 0;
     z-index: 999;
     h3{
-        font-size: 1.5rem;
+        font-size: $texto-web;
         color: #4D4F51;
     }
     #navbarNavAltMarkup{
@@ -21,7 +21,7 @@
         }
     .nav-link{
         margin-left: 1rem;
-        font-size: $texto-web;
+        font-size: $texto;
     }
     .nav-link:hover{
         background-color: $color-principal;

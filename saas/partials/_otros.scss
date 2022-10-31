@@ -16,6 +16,8 @@
 
 .hero-otros-proyectos{
     margin-top: 6rem;
+    background-image: $color-degradado;
+    background-color: #fff;
     .titulo-otro{
         font-size: $titulo;
         font-weight: 500;
@@ -36,5 +38,42 @@
     }
     .card:hover{
         box-shadow: 4px 4px 24px rgba(95, 93, 93, 0.25);
+        cursor: pointer;
     }
 }
+
+/*Estilos para página de otros ptoyectos versión web*/
+        /*Estilos de otros proyectos*/
+
+        @media (min-width: 700px){
+
+            .hero-otros-proyectos{
+                display: flex;
+                flex-direction: column;
+                margin: 6rem 5rem 3rem 5rem;
+                background-image: $color-degradado;
+                background-color: #fff;
+                .titulo-otro{
+                    text-align: center;
+                    font-size: $titulo-web;
+                    font-weight: 500;
+                    line-height: 4.5rem;
+                    span{
+                        font-weight: 900;
+                    }
+                }
+                .descripcion-otro{
+                    font-size: $texto-web;
+                    margin-top: 1rem;
+                }
+            }
+
+            .mosaico-img{
+                margin: 5rem 6rem 3rem 6rem;
+                .card{
+                    column-gap: 1rem;
+                    margin: 1rem;
+                }
+            }
+
+        }
