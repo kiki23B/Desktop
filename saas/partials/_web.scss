@@ -32,27 +32,6 @@
         margin-top: 2rem;
     }
 }
-.contenido-lp-brive{
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    padding: 2rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 1rem;
-    h2{
-        margin-top: 2rem;
-        font-size: $subtitulo;
-        font-weight: 800;
-    }
-    p{
-        font-size: $texto;
-        font-weight: 500;
-        text-align: start;
-    }   
-}
-.contenido-lp-brive:hover{
-    box-shadow: 0px 4px 14px rgba(76, 75, 75, 0.25);
-}
 .contenido-lp-ranking{
     display: flex;
     flex-direction: column;
@@ -95,3 +74,76 @@
     .contenido-lp-informe:hover{
         box-shadow: 0px 4px 14px rgba(76, 75, 75, 0.25);
 }
+
+/*Estilos para página de web versión escritorio*/
+        /*Estilos de hero*/
+
+        @media (min-width: 700px){
+            .hero-web{
+                display: flex;
+                flex-direction: column;
+                height: 35rem;
+                margin: 6rem 5rem 10rem 5rem;
+                .titulo-hero{
+                    font-size: $titulo-web;
+                    font-weight: 900;
+                    text-align: center;
+                }
+                .desarrollo-web{
+                    width: 55rem;
+                }
+        }
+        .paginas-web{
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+            grid-template-rows: 0.5fr 0.2fr;
+            grid-template-areas:
+            "contenido-lp-ranking contenido-lp-informe";
+            margin: 5rem 8rem;
+        }
+        .contenido-lp-ranking{
+            grid-area: contenido-lp-ranking;
+            display: block;
+            width: 40rem;
+            height: 0 auto;
+            h2{
+                font-size: $subtitulo-web;
+                font-weight: 900;
+            }
+            p{
+                font-size: $texto-web;
+                font-weight: 500;
+            }
+        }
+        .contenido-lp-informe{
+            grid-area: contenido-lp-informe;
+            display: block;
+            width: 40rem;
+            height: 0 auto;
+            h2{
+                font-size: $subtitulo-web;
+                font-weight: 900; 
+            }
+            p{
+                font-size: $texto-web;
+                font-weight: 500;
+            }
+        }
+        .pie{
+            height: 15rem;
+            width: 100vw;
+            p{
+                font-size: $texto-web;
+                margin: 3rem 4rem;
+                padding-left: 8rem;
+            }
+            img{
+                max-width: 4rem;
+                max-height: 4rem;
+                position: relative;
+                top: 7rem;
+                left: 53rem;
+            }   
+        }
+        }
+    

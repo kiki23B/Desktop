@@ -24,7 +24,7 @@
   top: 0;
   z-index: 999; }
   .navegacion h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #4D4F51; }
   .navegacion #navbarNavAltMarkup {
     background-color: #fff;
@@ -173,13 +173,13 @@ section {
     main h2 {
       grid-area: h2;
       margin-left: 0;
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-align: start; }
     main .btn {
       grid-area: btn;
       align-items: auto; }
       main .btn a {
-        font-size: 1.5rem; }
+        font-size: 1.2rem; }
     main .imagen-hero-mobil {
       display: none; }
   /*Sección de proyectos*/
@@ -195,22 +195,23 @@ section {
       display: flex;
       flex-direction: column;
       justify-content: end;
-      height: 15.5rem;
+      height: 15rem;
       width: 20rem; }
       section .uxui .uxui-titulo {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 300; }
       section .uxui .mobile-uxui {
         height: min-content;
-        padding: 0; }
+        padding: 0;
+        justify-content: end; }
     section .web {
       display: flex;
       flex-direction: column;
       justify-content: end;
-      height: 15.5rem;
+      height: 15rem;
       width: 20rem; }
       section .web .web-titulo {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 300;
         padding-bottom: 2rem; }
         section .web .web-titulo .mobile-web {
@@ -220,27 +221,27 @@ section {
       display: flex;
       flex-direction: column;
       justify-content: end;
-      height: 15.5rem;
+      height: 15rem;
       width: 20rem; }
       section .branding .branding-titulo {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 300; }
         section .branding .branding-titulo .mobile-branding {
           height: 20rem; }
   /*footer home*/
-  .pie {
+  .pie-ux {
     height: 15rem;
     width: 100vw; }
-    .pie p {
-      font-size: 1.5rem;
+    .pie-ux p {
+      font-size: 1.2rem;
       margin: 3rem 4rem;
-      padding-left: 2rem; }
-    .pie img {
-      max-width: 5rem;
-      max-height: 5rem;
+      padding-left: 8rem; }
+    .pie-ux img {
+      max-width: 4rem;
+      max-height: 4rem;
       position: relative;
       top: 7rem;
-      left: 40rem; } }
+      left: 53rem; } }
 
 /*estilos de página UX-UI*/
 /* estilos de body */
@@ -262,7 +263,7 @@ section {
   top: 0;
   z-index: 999; }
   .navegacion h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #4D4F51; }
   .navegacion #navbarNavAltMarkup {
     background-color: #fff;
@@ -387,7 +388,7 @@ section {
       justify-self: flex-start; }
     .hero-texto h2 {
       grid-area: h2;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 300;
       text-align: start;
       align-self: flex-start;
@@ -401,7 +402,7 @@ section {
       justify-self: flex-start;
       align-self: flex-start; }
       .hero-texto .btn a {
-        font-size: 1.5rem; }
+        font-size: 1.2rem; }
   /* estilos de proyecto mikan */
   .proyectos-ux {
     display: grid;
@@ -415,13 +416,13 @@ section {
       grid-area: img-ux-mikan; }
     .proyectos-ux .introduccion {
       grid-area: introduccion;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 500;
       align-self: flex-end;
       margin: 0.5rem; }
     .proyectos-ux .texto-web {
       grid-area: texto-web;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-top: 0.5rem; }
     .proyectos-ux .logos-ux {
       grid-area: logos-ux;
@@ -432,15 +433,15 @@ section {
     height: 15rem;
     width: 100vw; }
     .pie-ux p {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin: 3rem 4rem;
-      padding-left: 2rem; }
+      padding-left: 8rem; }
     .pie-ux img {
-      max-width: 5rem;
-      max-height: 5rem;
+      max-width: 4rem;
+      max-height: 4rem;
       position: relative;
       top: 7rem;
-      left: 40rem; } }
+      left: 53rem; } }
 
 /*estilos de página contáctame*/
 /* estilos de body */
@@ -461,7 +462,7 @@ section {
   top: 0;
   z-index: 999; }
   .navegacion h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #4D4F51; }
   .navegacion #navbarNavAltMarkup {
     background-color: #fff;
@@ -551,13 +552,13 @@ section {
       text-align: start; }
     .hero-contacto h2 {
       grid-area: h2;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 500;
       justify-content: flex-start;
       align-self: flex-start; }
     .hero-contacto p {
       grid-area: p;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       align-self: flex-start;
       justify-self: flex-start;
       align-self: flex-start; }
@@ -578,7 +579,7 @@ section {
     margin: 2rem 10rem 3rem 10rem; }
     .trayectoria h2 {
       grid-area: h2;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 900;
       align-self: flex-start;
       margin: auto; }
@@ -590,7 +591,7 @@ section {
       justify-self: center; }
   .proyectos h2 {
     display: inline;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500; }
   .proyectos #card1, .proyectos #card2, .proyectos #card3 {
     border-radius: 1rem;
@@ -601,7 +602,7 @@ section {
     height: 15rem;
     width: 100vw; }
     .pie p {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin: 3rem 4rem;
       padding-left: 2rem; }
     .pie img {
@@ -631,7 +632,7 @@ section {
   top: 0;
   z-index: 999; }
   .navegacion h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #4D4F51; }
   .navegacion #navbarNavAltMarkup {
     background-color: #fff;
@@ -659,25 +660,6 @@ section {
     width: 25rem;
     height: auto;
     margin-top: 2rem; }
-
-.contenido-lp-brive {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem;
-  padding: 2rem;
-  background-color: white;
-  border-radius: 1rem; }
-  .contenido-lp-brive h2 {
-    margin-top: 2rem;
-    font-size: 1.2rem;
-    font-weight: 800; }
-  .contenido-lp-brive p {
-    font-size: 1rem;
-    font-weight: 500;
-    text-align: start; }
-
-.contenido-lp-brive:hover {
-  box-shadow: 0px 4px 14px rgba(76, 75, 75, 0.25); }
 
 .contenido-lp-ranking {
   display: flex;
@@ -717,6 +699,62 @@ section {
 .contenido-lp-informe:hover {
   box-shadow: 0px 4px 14px rgba(76, 75, 75, 0.25); }
 
+/*Estilos para página de web versión escritorio*/
+/*Estilos de hero*/
+@media (min-width: 700px) {
+  .hero-web {
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+    margin: 6rem 5rem 10rem 5rem; }
+    .hero-web .titulo-hero {
+      font-size: 5rem;
+      font-weight: 900;
+      text-align: center; }
+    .hero-web .desarrollo-web {
+      width: 55rem; }
+  .paginas-web {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 0.5fr 0.2fr;
+    grid-template-areas: "contenido-lp-ranking contenido-lp-informe";
+    margin: 5rem 8rem; }
+  .contenido-lp-ranking {
+    grid-area: contenido-lp-ranking;
+    display: block;
+    width: 40rem;
+    height: 0 auto; }
+    .contenido-lp-ranking h2 {
+      font-size: 1.5rem;
+      font-weight: 900; }
+    .contenido-lp-ranking p {
+      font-size: 1.2rem;
+      font-weight: 500; }
+  .contenido-lp-informe {
+    grid-area: contenido-lp-informe;
+    display: block;
+    width: 40rem;
+    height: 0 auto; }
+    .contenido-lp-informe h2 {
+      font-size: 1.5rem;
+      font-weight: 900; }
+    .contenido-lp-informe p {
+      font-size: 1.2rem;
+      font-weight: 500; }
+  .pie {
+    height: 15rem;
+    width: 100vw; }
+    .pie p {
+      font-size: 1.2rem;
+      margin: 3rem 4rem;
+      padding-left: 8rem; }
+    .pie img {
+      max-width: 4rem;
+      max-height: 4rem;
+      position: relative;
+      top: 7rem;
+      left: 53rem; } }
+
 /*estilos de página otros proyectos*/
 /* estilos de body */
 .cuerpo-otros {
@@ -737,7 +775,7 @@ section {
   top: 0;
   z-index: 999; }
   .navegacion h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #4D4F51; }
   .navegacion #navbarNavAltMarkup {
     background-color: #fff;
@@ -790,7 +828,7 @@ section {
       .hero-otros-proyectos .titulo-otro span {
         font-weight: 900; }
     .hero-otros-proyectos .descripcion-otro {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-top: 1rem; }
   .mosaico-img {
     margin: 5rem 6rem 3rem 6rem; }
